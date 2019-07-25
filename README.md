@@ -1,5 +1,7 @@
 # KR_German_imperialism_collection
 
+>>>I DIDN'T TEST ANY OF THIS YET<<<
+
 Replaces <https://github.com/123randomuser321/KR_German_imperialism>
 
 Respective readmes can be found in the respective folders.
