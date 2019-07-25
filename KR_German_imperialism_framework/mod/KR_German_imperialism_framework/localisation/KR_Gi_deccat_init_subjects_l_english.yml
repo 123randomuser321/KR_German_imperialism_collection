@@ -1,0 +1,84 @@
+﻿### loc for decisions categories from 'Kaiserreich SubMod - German Imperialism'
+### by MEEEB
+### loc'd file is KR_Gi_deccat_init.txt
+### v1
+
+
+l_english:
+
+
+### This will all stay as todo for now
+
+
+### General German Imperialism
+german_imperialism:0 "todo"
+german_imperialism_desc:0 "todo_desc"
+
+### same for subjects
+german_subject_cat:0 "todo"
+german_subject_cat_desc:0 "todo_desc"
+
+
+### Europe
+
+### Baltic Duchy (BAT)
+german_BAT:0 "todo"
+german_BAT_desc:0 "todo_desc"
+
+german_BAT_subject:0 "todo"
+german_BAT_subject_desc:0 "todo_desc"
+
+### Flanders-Wallonia (BEL)
+german_BEL:0 "todo"
+german_BEL_desc:0 "todo_desc"
+
+german_BEL_subject:0 "todo"
+german_BEL_subject_desc:0 "todo_desc"
+
+### Lithuania (LIT)
+german_LIT:0 "todo"
+german_LIT_desc:0 "todo_desc"
+
+german_LIT_subject:0 "todo"
+german_LIT_subject_desc:0 "todo_desc"
+
+### White Ruthenia (WHR)
+german_WHR:0 "todo"
+german_WHR_desc:0 "todo_desc"
+
+german_WHR_subject:0 "todo"
+german_WHR_subject_desc:0 "todo_desc"
+
+
+### Africa
+
+### Mittelafrika (MAF)
+german_MAF:0 "todo"
+german_MAF_desc:0 "todo_desc"
+
+german_MAF_subject:0 "todo"
+german_MAF_subject_desc:0 "todo_desc"
+
+### Morocco (MOR)
+german_MOR:0 "todo"
+german_MOR_desc:0 "todo_desc"
+
+german_MOR_subject:0 "todo"
+german_MOR_subject_desc:0 "todo_desc"
+
+
+### Asia
+
+### AOG (AOG)
+german_AOG:0 "todo"
+german_AOG_desc:0 "todo_desc"
+
+german_AOG_subject:0 "todo"
+german_AOG_subject_desc:0 "todo_desc"
+
+### German East Asia (GEA)
+german_GEA:0 "todo"
+german_GEA_desc:0 "todo_desc"
+
+german_GEA_subject:0 "todo"
+german_GEA_subject_desc:0 "todo_desc"

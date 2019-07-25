@@ -1,0 +1,180 @@
+### Decision categories for 'Kaiserreich SubMod - German Imperialism'
+### by MEEEB
+### this contains master and subject categories for GER's initial subjects
+### mostly imported
+### v1
+
+
+### THIS IS PART OF THE FRAMEWORK
+### ALL MODULES ETC INHERIT THIS
+
+
+### General categories also defined here
+### used to unlock stuff for other categories and/or do things that affect several tags
+
+german_imperialism = { # for GER
+	visible = {
+	tag = GER
+	}
+}
+
+german_subject_cat = { # all subjects get this
+	visible = {
+	is_subject_of = GER
+	}
+}
+
+
+### Sorted by: Continent, Alphabet
+
+
+### Europe
+
+### Baltic Duchy (BAT)
+
+german_BAT = { # master
+	visible = {
+	tag = GER
+	BAT = {
+	is_subject_of = GER
+	}
+	}
+}
+
+german_BAT_subject = { # subject
+	visible = {
+	tag = BAT
+	is_subject_of = GER
+	}
+}
+
+### Flanders-Wallonia (BEL)
+
+german_BEL = { # master
+	visible = {
+	tag = GER
+	BEL = {
+	is_subject_of = GER
+	}
+	}
+}
+
+german_BEL_subject = { # subject
+	visible = {
+	tag = BEL # might need to be more specific, since actual Belgium can also be a subject
+	is_subject_of = GER
+	}
+}
+
+### Lithuania (LIT)
+
+german_LIT = { # master
+	visible = {
+	tag = GER
+	LIT = {
+	is_subject_of = GER
+	}
+	}
+}
+
+german_LIT_subject = { # subject
+	visible = {
+	tag = LIT
+	is_subject_of = GER
+	}
+}
+
+### White Ruthenia (WHR)
+
+german_WHR = { # master
+	visible = {
+	tag = GER
+	WHR = {
+	is_subject_of = GER
+	}
+	}
+}
+
+german_WHR_subject = { # subject
+	visible = {
+	tag = WHR
+	is_subject_of = GER
+	}
+}
+
+### Africa
+
+### Mittelafrika
+
+german_MAF = { # master
+	visible = {
+	tag = GER
+	MAF = {
+	is_subject_of = GER
+	}
+	}
+}
+
+german_MAF_subject = { # subject
+	visible = {
+	tag = MAF
+	is_subject_of = GER
+	}
+}
+
+### Morocco (MOR)
+
+german_MOR = { # master
+	visible = {
+	tag = GER
+	MOR = {
+	is_subject_of = GER
+	}
+	}
+}
+
+german_MOR_subject = { # subject
+	visible = {
+	tag = MOR
+	is_subject_of = GER
+	}
+}
+
+### Asia
+
+### AOG
+### this probably won't recieve any content before the China rework
+
+german_AOG = { # master
+	visible = {
+	tag = GER
+	AOG = {
+	is_subject_of = GER
+	}
+	}
+}
+
+german_AOG_subject = { # subject
+	visible = {
+	tag = AOG
+	is_subject_of = GER
+	}
+}
+
+### German East Asia (GEA)
+
+german_GEA = { # master
+	visible = {
+	tag = GER
+	GEA = {
+	is_subject_of = GER
+	}
+	}
+}
+
+german_GEA_subject = { # subject
+	visible = {
+	tag = GEA
+	is_subject_of = GER
+	}
+}

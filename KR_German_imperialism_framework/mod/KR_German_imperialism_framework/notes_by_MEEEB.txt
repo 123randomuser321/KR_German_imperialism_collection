@@ -1,0 +1,49 @@
+If this is all on one line, blame Windows.
+### notes
+### For 'Kaiserreich SubMod - German Imperialism - Framework'
+### by MEEEB
+### v0
+
+
+Hello reader!
+
+This doc is quick rundown on sources plus some general dev notes.
+
+
+Disclaimer:
+
+All of the Kaiserreich Mod belongs to the Kaiserreich team and their members.
+This is just a Submod that interacts with and sometimes reuses code and/or gfx.
+This mod is subject to the Kaiserreich Usage Policy, found at:
+https://kaiserreich.fandom.com/wiki/Usage_Policy
+
+
+Sources:
+
+[sources of knowledge will not be quoted, yet, as there are none except my brain and maybe KR's files]
+Propaganda pic, aka my logo: https://upload.wikimedia.org/wikipedia/commons/6/6b/Guerre_14-18-Humour-L%27ingordo%2C_trop_dur-1915.JPG
+
+
+General notes:
+
+This is the framework, or better, dependency of the reworked mod.
+
+This, on its own, does nothing visible ingame, instead it is used to define things such
+as decision categories which all modules of the mod should be able to use.
+Thus, everything else depends on this.
+
+
+Files added:
+
+/common/decisions/categories/KR_Gi_deccat_init_subjects.txt
+/localisation/KR_Gi_deccat_init_subjects_l_english.yml
+/logo.png
+/notes_by_MEEEB.txt (this file)
+
+
+Dev notes:
+
+As with the previous iteration of this mod, this still has a long way to go.
+
+
+ - MEEEB
