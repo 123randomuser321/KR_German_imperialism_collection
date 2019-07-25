@@ -6,4 +6,4 @@ Respective readmes can be found in the respective folders.
 
 List of folders plus some info:
 
-KR_German_imperialism_framework (without this, most this won't work; consider this the mod base)
+KR_German_imperialism_framework (without this, most things won't work; consider this the mod base)
