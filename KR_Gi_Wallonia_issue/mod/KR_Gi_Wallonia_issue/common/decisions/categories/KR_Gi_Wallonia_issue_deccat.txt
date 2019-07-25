@@ -1,0 +1,23 @@
+### Decision categories for "KR_Gi Module - Wallonia issue"
+### by MEEEB
+### contains two categories regarding the Wallonia issue
+### v1
+
+
+### Category for Germany to do things
+
+GER_german_wallonia = {
+	visible = {
+	tag = GER
+	has_global_flag = wallonia_issue_started
+	}
+}
+
+### Category for BEL (which can be Flanders-Wallonia, Belgium, et al)
+
+BEL_german_wallonia = {
+	visible = {
+	tag = BEL
+	has_global_flag = wallonia_issue_started
+	}
+}
