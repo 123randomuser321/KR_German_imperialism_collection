@@ -36,7 +36,9 @@ Thus, everything else depends on this.
 Files added:
 
 /common/decisions/categories/KR_Gi_deccat_init_subjects.txt
+/common/decisions/categories/KR_Gi_deccat_terra_etc.txt
 /localisation/KR_Gi_deccat_init_subjects_l_english.yml
+/localisation/KR_Gi_deccat_terra_etc_l_english.yml
 /logo.png
 /notes_by_MEEEB.txt (this file)
 

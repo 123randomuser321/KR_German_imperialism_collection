@@ -1,0 +1,15 @@
+﻿### loc for decisions categories from 'Kaiserreich SubMod - German Imperialism - Framework'
+### by MEEEB
+### loc's file is KR_Gi_deccat_terra_etc.txt
+### v1
+
+
+l_english:
+
+
+### also todo
+
+
+### General territorial questions for GER
+ger_terra_master:0 "Territorial matters"
+ger_terra_master_desc:0 "todo_desc"

@@ -1,4 +1,4 @@
-### Decision categories for 'Kaiserreich SubMod - German Imperialism'
+### Decision categories for 'Kaiserreich SubMod - German Imperialism - Framework'
 ### by MEEEB
 ### this contains master and subject categories for GER's initial subjects
 ### mostly imported

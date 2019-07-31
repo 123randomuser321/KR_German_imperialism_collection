@@ -1,0 +1,21 @@
+### Decision categories for 'Kaiserreich SubMod - German Imperialism - Framework'
+### by MEEEB
+### this contains 'global' categories for territorial questions
+### v0
+
+
+### THIS IS PART OF THE FRAMEWORK
+### ALL MODULES ETC INHERIT THIS
+
+
+### General category for GER
+
+ger_terra_master = {
+	visible = {
+	tag = GER
+	num_subjects > 0
+	}
+}
+
+
+### subjects will most likely get categories in modules
