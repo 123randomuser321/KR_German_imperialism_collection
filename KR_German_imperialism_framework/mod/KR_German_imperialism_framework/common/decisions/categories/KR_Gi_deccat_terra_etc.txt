@@ -13,7 +13,6 @@
 ger_terra_master = {
 	visible = {
 	tag = GER
-	num_subjects > 0
 	}
 }
 
