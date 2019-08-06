@@ -10,6 +10,8 @@ GER_german_wallonia = {
 	visible = {
 	tag = GER
 	has_global_flag = wallonia_issue_started
+	owns_state = 741
+	owns_state = 8
 	}
 }
 
@@ -19,5 +21,6 @@ BEL_german_wallonia = {
 	visible = {
 	tag = BEL
 	has_global_flag = wallonia_issue_started
+	NOT = { owns_state = 741 }
 	}
 }

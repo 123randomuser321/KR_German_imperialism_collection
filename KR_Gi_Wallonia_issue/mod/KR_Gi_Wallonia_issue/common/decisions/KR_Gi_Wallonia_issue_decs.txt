@@ -1,0 +1,300 @@
+### Decisions for 'KR_Gi Module - Wallonia issue'
+### by MEEEB
+### v1
+
+
+### let's start with the intro
+### that way, we will transition into unique categories
+
+ger_terra_master = { # from the Framework
+	
+	start_wallonia_issue = {
+	
+	visible = { # this needs improvement
+	NOT = { has_war = yes }
+	owns_state = 741
+	owns_state = 8 # pure sanity check, this is Luxemburg
+	any_allied_country = { owns_state = 16 } # subject to change
+	}
+
+	fire_only_once = yes
+
+	days_remove = 7
+
+	remove_effect = {
+	country_event = walloniaissue.1
+	}
+	}
+
+}
+
+
+
+### Now the decisions for Germany
+### mostly ported from initial mod
+
+GER_german_wallonia = {
+	
+	prep_integration_741 = { # prepare integration
+	
+	visible = {
+	has_country_flag = GER_kept_741 # set by walloniaissue.1
+	}
+
+	fire_only_once = yes
+
+	days_remove = 7
+
+	modifier = {
+	political_power_gain = -0.25
+	}
+
+	remove_effect = {
+	hidden_effect = {
+	set_country_flag = GER_741_started
+	set_country_flag = {
+	flag = GER_741_integration # fill this and core it
+	value = 0
+	}
+	}
+	}
+	}
+
+
+	luxemburg_claims_741 = { # Charlotte wants it
+
+	visible = {
+	has_country_flag = GER_741_started
+	}
+
+	cost = 10
+
+	fire_only_once = yes
+
+	complete_effect = {
+	country_event = walloniaissue.2 # Luxemburg claim event
+	}
+	}
+
+
+	luxemburg_elite_741 = { # nobles and businessmen from Luxemburg are granted land et al
+
+	visible = {
+	has_country_flag = GER_741_claims_done # from walloniaissue.3
+	}
+
+	cost = 10
+
+	fire_only_once = yes
+
+	remove_effect = {
+	hidden_effect = {
+	set_country_flag = LUX_741_elite_settled
+	modify_country_flag = {
+	flag = GER_741_integration
+	value = 2
+	}
+	}
+	}
+
+	days_remove = 56 # 8 weeks
+
+	modifier = {
+	political_power_gain = -0.05
+	}
+	}
+
+
+	german_elite_741 = { # German nobles move in (companies are already there)
+
+	visible = {
+	has_country_flag = GER_741_claims_done # from walloniaissue.3
+	}
+
+	cost = 10
+
+	fire_only_once = yes
+
+	remove_effect = {
+	hidden_effect = {
+	set_country_flag = GER_741_elite_settled
+	modify_country_flag = {
+	flag = GER_741_integration
+	value = 1
+	}
+	}
+	}
+
+	days_remove = 84 # 12 weeks, longer since you are the oppressor
+
+	modifier = {
+	political_power_gain = -0.5
+	}
+	}
+
+
+	public_schools_741_ger1 = { # Make German a secondary language in public schools
+
+	visible = {
+	has_country_flag = GER_741_elite_settled
+	}
+
+	cost = 20
+
+	fire_only_once = yes
+
+	complete_effect = {
+	country_event = walloniaissue.4 # flavor, some explanation
+	}
+
+	remove_effect = {
+	hidden_effect = { set_country_flag = public_schools_741_partial_german }
+	}
+
+	days_remove = 250 # arbitrary
+
+	modifier = {
+	political_power_gain = -0.25
+	}
+	}
+
+
+	public_schools_741_ger2 = { # require most academic matters to be handled in German
+
+	visible = {
+	has_country_flag = public_schools_741_partial_german # set by walloniaissue.4
+	has_country_flag = {
+	flag = GER_741_integration
+	value > 6
+	}
+	}
+
+	cost = 50
+
+	fire_only_once = yes
+
+	complete_effect = {
+	country_event = walloniaissue.5 # flavor
+	}
+
+	remove_effect = {
+	hidden_effect = {
+	modify_country_flag = {
+	flag = GER_741_integration
+	value = 3
+	}
+	}
+	country_event = walloniaissue.6
+	}
+
+	days_remove = 56 # eight weeks
+	}
+
+
+	attract_settlers_741 = { # attract German and Luxemburgian settlers, i.e. workers
+
+	visible = {
+	has_country_flag = GER_741_elite_settled
+	has_country_flag = LUX_741_elite_settled
+	}
+
+	cost = 50
+
+	fire_only_once = yes
+
+	complete_effect = {
+	country_event = walloniaissue.7 # more flavor
+	}
+
+	remove_effect = {
+	hidden_effect = {
+	modify_country_flag = {
+	flag = GER_741_integration
+	value = 3
+	}
+	}
+	country_event = walloniaissue.8 # increased Germanisation
+	741 = { add_manpower = 500 } # more or less symbolic
+	}
+
+	days_remove = 365 # yes, that's a year
+
+	modifier = {
+	MONTHLY_POPULATION = -0.001 # test this
+	}
+	}
+
+
+	partial_LUX_admin_741 = { # let Charlotte partially inherit the occupational admin
+
+	visible = {
+	has_country_flag = LUX_741_elite_settled
+	}
+
+	cost = 10
+
+	fire_only_once = yes
+
+	complete_effect = {
+	country_event = walloniaissue.9 # flavor, LUX officials
+	}
+
+	remove_effect = {
+	hidden_effect = {
+	modify_country_flag = {
+	flag = GER_741_integration
+	value = 1
+	}
+	}
+	country_event = walloniaissue.10 # LUX admins settled
+	}
+
+	days_remove = 28 # four weeks
+	}
+
+
+	final_integration_741 = {
+
+	visible = {
+	has_country_flag = GER_741_final_integration
+	}
+
+	cost = 25
+
+	fire_only_once = yes
+
+	complete_effect = {
+	country_event = walloniaissue.13 # finalising integration
+	}
+
+	remove_effect = {
+	country_event = walloniaissue.14 # Core on 741, also rename it
+	}
+
+	days_remove = 28 # four weeks
+	}
+
+
+	remove_core_BEL_741 = { # remove BEL's core
+
+	visible = {
+	has_country_flag = BEL_741_timeout
+	}
+
+	fire_only_once = yes
+
+	remove_effect = {
+	741 = {
+	remove_core_of = BEL
+	add_claim_by = BEL
+	}
+	BEL = { country_event = walloniaissue.15 } # sad Adalbert
+	}
+
+	days_remove = 365 # a year
+
+	modifier = {
+	political_power_gain = -0.1
+	}
+	}
+}
