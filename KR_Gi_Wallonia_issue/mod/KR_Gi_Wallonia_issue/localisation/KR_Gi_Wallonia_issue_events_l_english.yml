@@ -22,9 +22,9 @@ walloniaissue.2.a:0 "We didn't need this to happen..."
 
 ### Charlotte claims German Wallonia
 walloniaissue.3.t:0 "Luxemburg claims German Wallonia"
-walloniaissue.3.d:0 "The Grand Duchy of Luxemburg, part of [GER.GetNameDef] ever since the end of Weltkrieg, has, as of this afternoon, officially laid clame to the German-administered regions of Wallonia.\n\nWith this done, the Bundestag may decide further actions."
+walloniaissue.3.d:0 "The Grand Duchy of Luxemburg, part of [GER.GetNameDef] ever since the end of Weltkrieg, has, as of this afternoon, officially laid clame to the German-administered regions of Wallonia.\n\nWith this done, the Bundesrat may decide further actions."
 walloniaissue.3.a:0 "Charlotte is doing a great job!"
-walloniaissue.3.ta:0 "German Wallonia will gain a claim by Luxemburg, with the Bundestag deciding on further territorial actions."
+walloniaissue.3.ta:0 "German Wallonia will gain a claim by Luxemburg, with the Bundesrat deciding on further territorial actions."
 
 ### Bundesrat ratifies Charlotte's claim
 walloniaissue.4.t:0 "Bundesrat ratifies Luxemburg's claim"
