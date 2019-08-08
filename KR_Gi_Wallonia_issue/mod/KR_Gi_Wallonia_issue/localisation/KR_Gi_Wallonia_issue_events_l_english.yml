@@ -1,0 +1,93 @@
+﻿### loc for events from 'KR_Gi Module - Wallonia issue'
+### by MEEEB
+### loc'd file is KR_Gi_Wallonia_issue_events.txt
+### v1
+
+
+l_english:
+
+
+### Fate of German Wallonia
+walloniaissue.1.t:0 "The Fate of German Wallonia"
+walloniaissue.1.d:0 "The Second Weltkrieg is over. And with it, our official reason for administering the Walloon industry is invalid.\nWhile it might be painful, we must finally decide what to do with this tract of land.\n\nDo we keep and integrate it, or do we return it to [BEL.GetName]?"
+walloniaissue.1.a:0 "We have no need for this. Return the territory."
+walloniaissue.1.ta:0 "This might ease tensions in the West."
+walloniaissue.1.b:0 "Keep it and turn it into something German!"
+walloniaissue.1.tb:0 "If you play your cards right, you will gain a core."
+
+### territory slips through Adalbert's hands
+walloniaissue.2.t:0 "Message from [GER.Capital.GetName]"
+walloniaissue.2.d:0 "The German government has just told us, that [GER.GetNameDef] does not intend to return the Walloon industrial area."
+walloniaissue.2.a:0 "We didn't need this to happen..."
+
+### Charlotte claims German Wallonia
+walloniaissue.3.t:0 "Luxemburg claims German Wallonia"
+walloniaissue.3.d:0 "The Grand Duchy of Luxemburg, part of [GER.GetNameDef] ever since the end of Weltkrieg, has, as of this afternoon, officially laid clame to the German-administered regions of Wallonia.\n\nWith this done, the Bundestag may decide further actions."
+walloniaissue.3.a:0 "Charlotte is doing a great job!"
+walloniaissue.3.ta:0 "German Wallonia will gain a claim by Luxemburg, with the Bundestag deciding on further territorial actions."
+
+### Bundesrat ratifies Charlotte's claim
+walloniaissue.4.t:0 "Bundesrat ratifies Luxemburg's claim"
+walloniaissue.4.d:0 "The Bundesrat has officially recognized the claim of the Grand Duchy of Luxemburg to the German-administered Walloon territories, thus making it an official claim exercised through Germany itself.\n\nWe may now proceed to further integrate said territories."
+walloniaissue.4.a:0 "As expected."
+walloniaissue.4.ta:0 "Germany now officially claims German Wallonia, and can use Luxemburg's claim as a justification."
+
+### German is now mandatory second language
+walloniaissue.5.t:0 "German - An official language"
+walloniaissue.5.d:0 "German has been the official administrative language in German Wallonia ever since we occupied said territory.\nHowever, until now, the territory was considered an integral part of [BEL.GetNameDef], with us administering it until further notice.\n\nThis means that now, we must actually entrench German.\nWhile not an easy task, we can start by making German a mandatory second language in public schools, with us enforcing a strictly German-speaking administration on top of that."
+walloniaissue.5.a:0 "Let's get to work, then."
+
+### enforce German in all of academia
+walloniaissue.6.t:0 "Further entrenchment of German"
+walloniaissue.6.d:0 "With Germanisation coming along well, it might be time to tighten the noose on academia.\n\nWe will start to require all higher forms of academia, including essays and scientific works, to be written, read, taught, and generally handled in German."
+walloniaissue.6.a:0 "A harsh, but necessary measure."
+
+### German entrenched in academia
+walloniaissue.7.t:0 "German entrenched"
+walloniaissue.7.d:0 "Walloon Academia adapted faster than initially expected to the new guidelines."
+walloniaissue.7.a:0 "Good news!"
+
+### attracting GER and LUX settler
+walloniaissue.8.t:0 "Settle German Wallonia"
+walloniaissue.8.d:0 "We can not guarantee that the native Walloon population will stay loyal to us in the long run.\nThus it is required to establish a population that will stay loyal. The easiest way for us to achieve this, is by allowing Luxemburgian and German citizens in general to settle in our Walloon territories, preferably working for our nobility and companies."
+walloniaissue.8.a:0 "A long endeavor, for sure."
+
+### settlement complete
+walloniaissue.9.t:0 "Settlement campaign concluded"
+walloniaissue.9.d:0 "While an actual complete settlement of our Walloon territories is not technically feasible, we have established a loyal and more or less influential populus in Wallonia.\n\nThrough them, we can further exert our influence."
+walloniaissue.9.a:0 "Patience is key."
+
+### Charlotte gets the government
+walloniaissue.10.t:0 "Partial transfer of authority"
+walloniaissue.10.d:0 "With a Luxemburgian nobility and upper class present, we can now feasibly transfer some adminitrative duties, including, but not limited to, taxation to the Grand Duchy's government."
+walloniaissue.10.a:0 "One step closer."
+
+### Charlotte got the government
+walloniaissue.11.t:0 "Partial transfer complete"
+walloniaissue.11.d:0 "The intended transfer of authority has been completed, with no events of note complicating the process."
+walloniaissue.11.a:0 "One less problem to worry about."
+
+### random industrial investments into 741
+walloniaissue.12.t:0 "German Industrialists invest into German Wallonia"
+walloniaissue.12.d:0 "It seems as though stating our intent to integrate our Walloon territories has led to an increase in investments into said area.\n\nToday, Krupp and other companies have opened a multitude of new factories."
+walloniaissue.12.a:0 "Always helpful, they are."
+
+### event to allow coring of 741
+walloniaissue.13.t:0 "The State of affairs in German Wallonia"
+walloniaissue.13.d:0 "Our efforts in aligning and integrating the Walloon territories are a success.\n\nGerman is taking root in all corners of the territory, the Grand Duchy successfully administeres its tracts of land and the population has been pacified.\n\nIt is time for the final step."
+walloniaissue.13.a:0 "Let us finally put this issue to rest!"
+
+### some flavor for final integration
+walloniaissue.14.t:0 "Final integration begins."
+walloniaissue.14.d:0 "The coming month will certainly be stressful, as there is still alot to do before we our goal is achieved.\n\nWhile we do have experience in organizing ceremonies, it will still take some time to actually plan one.\nAdditionally, we will still need to transfer full authority over the Walloon territories to the Grand Duchy of Luxemburg, including, but not limited to positioning garrisons, handing over economic control and staffing the administration with Luxemburgian officials.\n\nWe will, however, maintain a presence."
+walloniaissue.14.a:0 "Let us get to work."
+
+### finally get the core on 741 ### todo: beef this up a bit
+walloniaissue.15.t:0 "The Grand Duchy proclaims Groß Luxemburg!"
+walloniaissue.15.d:0 "\"The European territories of the former Kingdom of Belgium still administered by [GER.GetNameDef] shall be incorporated into the Grand Duchy of Luxemburg, with administrative control transferred accordingly.\nThese territories, formerly known as German Wallonia, shall henceforth be called Groß Luxemburg.\"\n - Excerpt from the Statute of Integration, signed by Duchess Charlotte of Luxemburg and [GER.GetLeader]\n\n\nThe ink on the document had not yet dried when authority was transferred to the Grand Duchy, as a German garrison symbolically shook hands with a counterpart from Luxemburg.\nThe event was a complete success."
+walloniaissue.15.a:0 "Groß Luxemburg it is!"
+
+### BEL loses core on 741
+walloniaissue.16.t:0 "German Wallonia gone"
+walloniaissue.16.d:0 "While technically not under our control for a long time, over the past months all signs of Walloon separatism in German-administered Wallonia have vanished.\nSad as it may be, it is lost."
+walloniaissue.16.a:0 "A sadness overcomes me..."

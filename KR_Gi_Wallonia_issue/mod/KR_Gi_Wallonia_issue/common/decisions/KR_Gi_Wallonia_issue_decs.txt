@@ -72,7 +72,7 @@ GER_german_wallonia = {
 	fire_only_once = yes
 
 	complete_effect = {
-	country_event = walloniaissue.2 # Luxemburg claim event
+	country_event = walloniaissue.3 # Luxemburg claim event
 	}
 	}
 
@@ -80,7 +80,7 @@ GER_german_wallonia = {
 	luxemburg_elite_741 = { # nobles and businessmen from Luxemburg are granted land et al
 
 	visible = {
-	has_country_flag = GER_741_claims_done # from walloniaissue.3
+	has_country_flag = GER_741_claims_done # from walloniaissue.4
 	}
 
 	cost = 10
@@ -108,7 +108,7 @@ GER_german_wallonia = {
 	german_elite_741 = { # German nobles move in (companies are already there)
 
 	visible = {
-	has_country_flag = GER_741_claims_done # from walloniaissue.3
+	has_country_flag = GER_741_claims_done # from walloniaissue.4
 	}
 
 	cost = 10
@@ -144,7 +144,7 @@ GER_german_wallonia = {
 	fire_only_once = yes
 
 	complete_effect = {
-	country_event = walloniaissue.4 # flavor, some explanation
+	country_event = walloniaissue.5 # flavor, some explanation
 	}
 
 	remove_effect = {
@@ -162,7 +162,7 @@ GER_german_wallonia = {
 	public_schools_741_ger2 = { # require most academic matters to be handled in German
 
 	visible = {
-	has_country_flag = public_schools_741_partial_german # set by walloniaissue.4
+	has_country_flag = public_schools_741_partial_german
 	has_country_flag = {
 	flag = GER_741_integration
 	value > 6
@@ -174,7 +174,7 @@ GER_german_wallonia = {
 	fire_only_once = yes
 
 	complete_effect = {
-	country_event = walloniaissue.5 # flavor
+	country_event = walloniaissue.6 # flavor
 	}
 
 	remove_effect = {
@@ -184,7 +184,7 @@ GER_german_wallonia = {
 	value = 3
 	}
 	}
-	country_event = walloniaissue.6
+	country_event = walloniaissue.7
 	}
 
 	days_remove = 56 # eight weeks
@@ -203,7 +203,7 @@ GER_german_wallonia = {
 	fire_only_once = yes
 
 	complete_effect = {
-	country_event = walloniaissue.7 # more flavor
+	country_event = walloniaissue.8 # more flavor
 	}
 
 	remove_effect = {
@@ -213,7 +213,7 @@ GER_german_wallonia = {
 	value = 3
 	}
 	}
-	country_event = walloniaissue.8 # increased Germanisation
+	country_event = walloniaissue.9 # increased Germanisation
 	741 = { add_manpower = 500 } # more or less symbolic
 	}
 
@@ -236,7 +236,7 @@ GER_german_wallonia = {
 	fire_only_once = yes
 
 	complete_effect = {
-	country_event = walloniaissue.9 # flavor, LUX officials
+	country_event = walloniaissue.10 # flavor, LUX officials
 	}
 
 	remove_effect = {
@@ -246,7 +246,7 @@ GER_german_wallonia = {
 	value = 1
 	}
 	}
-	country_event = walloniaissue.10 # LUX admins settled
+	country_event = walloniaissue.11 # LUX admins settled
 	}
 
 	days_remove = 28 # four weeks
@@ -264,11 +264,11 @@ GER_german_wallonia = {
 	fire_only_once = yes
 
 	complete_effect = {
-	country_event = walloniaissue.13 # finalising integration
+	country_event = walloniaissue.14 # finalising integration
 	}
 
 	remove_effect = {
-	country_event = walloniaissue.14 # Core on 741, also rename it
+	country_event = walloniaissue.15 # Core on 741, also rename it
 	}
 
 	days_remove = 28 # four weeks
@@ -288,7 +288,7 @@ GER_german_wallonia = {
 	remove_core_of = BEL
 	add_claim_by = BEL
 	}
-	BEL = { country_event = walloniaissue.15 } # sad Adalbert
+	BEL = { country_event = walloniaissue.16 } # sad Adalbert
 	}
 
 	days_remove = 365 # a year

@@ -1,0 +1,293 @@
+### Events for 'KR_Gi Module - Wallonia issue'
+### by MEEEB
+### v1
+
+
+### add namespace for this
+
+add_namespace = walloniaissue
+
+
+### Now th events
+### mostly ported
+
+
+country_event = { # The Fate of German Wallonia
+	id = walloniaissue.1 # I may move this later
+	title = walloniaissue.1.t
+	desc = walloniaissue.1.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.1.a # Do Adalbert a favor and return German Wallonia
+	add_political_power = -50 # it does hurt
+	hidden_effect = {
+	BEL = { transfer_state = 741 } # BEL gets German Wallonia
+	### add some decisions for BEL regarding Walloon seperatism and such things
+	}
+	custom_effect_tooltip = walloniaissue.1.ta
+	}
+
+	option = {
+	name = walloniaissue.1.b # keep the province and its industry
+	add_political_power = 50 # Govt happy
+	BEL = { country_event = walloniaissue.2 }
+	hidden_effect = { set_country_flag = GER_kept_741 }
+	custom_effect_tooltip = walloniaissue.1.tb
+	}
+}
+
+country_event = { # Adalbert loses the territory, final edition
+	id = walloniaissue.2
+	title = walloniaissue.2.t
+	desc = walloniaissue.2.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.2.a # begrudgingly concede
+	add_political_power = -100
+	### maybe add an option for counteraction later (e.g. if Adalbert implemented reforms)
+	}
+}
+
+country_event = { # Grand Duchy of Luxemburg claims Deutsch-Wallonien
+	id = walloniaissue.3
+	title = walloniaissue.3.t
+	desc = walloniaissue.3.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.3.a
+	hidden_effect = {
+	741 = { add_claim_by = LUX }
+	country_event = walloniaissue.4 # Bundesrat decides
+	}
+	custom_effect_tooltip = walloniaissue.3.ta
+	}
+}
+
+country_event = { # Bundesrat recognizes Charlotte's claim
+	id = walloniaissue.4
+	title = walloniaissue.4.t
+	desc = walloniaissue.4.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.4.a
+	hidden_effect = {
+	#741 = { add_claim_by = GER } # state file already adds a claim
+	set_country_flag = GER_741_claims_done # for further decisions
+	}
+	custom_effect_tooltip = walloniaissue.4.ta
+	}
+}
+
+country_event = { # German is now mandatory second language
+	id = walloniaissue.5
+	title = walloniaissue.5.t
+	desc = walloniaissue.5.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.5.a
+	add_political_power = 50
+	hidden_effect = {
+	modify_country_flag = {
+	flag = GER_741_integration
+	value = 2
+	}
+	}
+	}
+}
+
+country_event = { # Notification re furthering Germaninisation of academia
+	id = walloniaissue.6
+	title = walloniaissue.6.t
+	desc = walloniaissue.6.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.6.a
+	}
+}
+
+country_event = { # German is now entrenched in academia
+	id = walloniaissue.7
+	title = walloniaissue.7.t
+	desc = walloniaissue.7.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.7.a
+	add_political_power = 50
+	}
+}
+
+country_event = { # attracting settlers
+	id = walloniaissue.8
+	title = walloniaissue.8.t
+	desc = walloniaissue.8.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.8.a
+	}
+}
+
+country_event = { # Germans and Luxemburgians settled
+	id = walloniaissue.9
+	title = walloniaissue.9.t
+	desc = walloniaissue.9.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.9.a
+	add_political_power = 50
+	}
+}
+
+country_event = { # partial transfer of authority to Luxemburg
+	id = walloniaissue.10
+	title = walloniaissue.10.t
+	desc = walloniaissue.10.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.10.a
+	}
+}
+
+country_event = { # Hybrid-Admin established
+	id = walloniaissue.11
+	title = walloniaissue.11.t
+	desc = walloniaissue.11.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.11.a
+	add_political_power = 50
+	}
+}
+
+country_event = { # random industrial investments during integration of German Wallonia
+	id = walloniaissue.12
+	title = walloniaissue.12.t
+	desc = walloniaissue.12.d
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = GER
+	has_country_flag = GER_741_integration
+	owns_state = 741
+	owns_state = 8
+	}
+
+	mean_time_to_happen = {
+	days = 365 # one year
+	}
+
+	option = {
+	name = walloniaissue.12.a
+	741 = {
+	add_extra_state_shared_building_slots = 3 # safety reasons
+	add_building_construction = { # 2 civs
+	type = industrial_complex
+	level = 2
+	instant_build = yes
+	}
+	add_building_construction = { # 1 mil
+	type = arms_factory
+	level = 1
+	instant_build = yes
+	}
+	}
+	hidden_effect = {
+	modify_country_flag = {
+	flag = GER_741_integration
+	value = 1
+	}
+	}
+	}
+}
+
+country_event = { # fires when GER has almost fully integrated 741
+	id = walloniaissue.13
+	title = walloniaissue.13.t
+	desc = walloniaissue.13.d
+
+	trigger = {
+	tag = GER
+	has_country_flag = {
+	flag = GER_741_integration
+	value = 13 # arbitrary
+	}
+	}
+
+	fire_only_once = yes
+
+	option = {
+	name = walloniaissue.13.a
+	hidden_effect = { set_country_flag = GER_741_final_integration }
+	}
+}
+
+country_event = { # explain final integration a bit
+	id = walloniaissue.14
+	title = walloniaissue.14.t
+	desc = walloniaissue.14.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.14.a
+	add_political_power = 50
+	}
+}
+
+country_event = { # get the core on 741
+	id = walloniaissue.15
+	title = walloniaissue.15.t
+	desc = walloniaissue.15.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.15.a
+	add_political_power = 100
+	add_stability = 0.1
+	741 = {
+	remove_claim_by = LUX
+	remove_claim_by = GER
+	add_core_of = LUX
+	add_core_of = GER
+	set_state_name = "Groß Luxemburg" # might change the name later
+	}
+	hidden_effect = { set_country_flag = BEL_741_timeout } # to remove BEL's core
+	}
+}
+
+country_event = { # sad Adalbert loses the core
+	id = walloniaissue.16
+	title = walloniaissue.16.t
+	desc = walloniaissue.16.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.16.a
+	add_political_power = -100
+	add_stability = -0.1
+	}
+}
