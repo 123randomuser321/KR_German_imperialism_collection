@@ -10,7 +10,8 @@ GER_german_wallonia = {
 	visible = {
 	tag = GER
 	has_global_flag = wallonia_issue_started
-	owns_state = 741
+	# Why still a global flag? So Albert-in-exile can protest
+	owns_state = 741 # don't forget to add a sanity-decision incase the core exists but the state isn't owned
 	owns_state = 8
 	}
 }
@@ -20,7 +21,10 @@ GER_german_wallonia = {
 BEL_german_wallonia = {
 	visible = {
 	tag = BEL
-	has_global_flag = wallonia_issue_started
-	NOT = { owns_state = 741 }
+	has_country_flag = wallonia_issue_started_BEL
+	NOT = {
+	owns_state = 741
+	741 = { is_core_of = GER }
+	}
 	}
 }

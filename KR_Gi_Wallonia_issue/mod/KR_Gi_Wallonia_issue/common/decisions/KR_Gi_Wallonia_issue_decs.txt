@@ -92,7 +92,7 @@ GER_german_wallonia = {
 	set_country_flag = LUX_741_elite_settled
 	modify_country_flag = {
 	flag = GER_741_integration
-	value = 2
+	value = 1
 	}
 	}
 	}
@@ -181,7 +181,7 @@ GER_german_wallonia = {
 	hidden_effect = {
 	modify_country_flag = {
 	flag = GER_741_integration
-	value = 3
+	value = 4
 	}
 	}
 	country_event = walloniaissue.7
@@ -210,7 +210,7 @@ GER_german_wallonia = {
 	hidden_effect = {
 	modify_country_flag = {
 	flag = GER_741_integration
-	value = 3
+	value = 5
 	}
 	}
 	country_event = walloniaissue.9 # increased Germanisation
@@ -218,10 +218,6 @@ GER_german_wallonia = {
 	}
 
 	days_remove = 365 # yes, that's a year
-
-	modifier = {
-	MONTHLY_POPULATION = -0.001 # test this
-	}
 	}
 
 
@@ -298,3 +294,10 @@ GER_german_wallonia = {
 	}
 	}
 }
+
+
+### decisions for BEL
+### mostly used to disrupt German efforts
+### Can however culminate in a plebiscite and German withdrawal
+
+BEL_german_wallonia = {}

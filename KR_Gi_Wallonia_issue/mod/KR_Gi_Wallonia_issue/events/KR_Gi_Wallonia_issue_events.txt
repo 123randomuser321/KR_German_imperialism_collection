@@ -8,12 +8,12 @@
 add_namespace = walloniaissue
 
 
-### Now th events
+### Now the events
 ### mostly ported
 
 
 country_event = { # The Fate of German Wallonia
-	id = walloniaissue.1 # I may move this later
+	id = walloniaissue.1
 	title = walloniaissue.1.t
 	desc = walloniaissue.1.d
 
@@ -22,17 +22,24 @@ country_event = { # The Fate of German Wallonia
 	option = {
 	name = walloniaissue.1.a # Do Adalbert a favor and return German Wallonia
 	add_political_power = -50 # it does hurt
-	hidden_effect = {
-	BEL = { transfer_state = 741 } # BEL gets German Wallonia
-	### add some decisions for BEL regarding Walloon seperatism and such things
+	BEL = {
+	transfer_state = 741 # BEL gets German Wallonia
+	country_event = walloniaissue.17
 	}
+	741 = { remove_claim_by = GER }
 	custom_effect_tooltip = walloniaissue.1.ta
 	}
 
 	option = {
 	name = walloniaissue.1.b # keep the province and its industry
 	add_political_power = 50 # Govt happy
+	if = {
+	limit = { BEL = { NOT = { has_country_flag = exile_canada } } } # Albert has more political leverage than anyone
+	BEL = { country_event = walloniaissue.20 }
+	}
+	else = {
 	BEL = { country_event = walloniaissue.2 }
+	}
 	hidden_effect = { set_country_flag = GER_kept_741 }
 	custom_effect_tooltip = walloniaissue.1.tb
 	}
@@ -48,7 +55,6 @@ country_event = { # Adalbert loses the territory, final edition
 	option = {
 	name = walloniaissue.2.a # begrudgingly concede
 	add_political_power = -100
-	### maybe add an option for counteraction later (e.g. if Adalbert implemented reforms)
 	}
 }
 
@@ -63,7 +69,7 @@ country_event = { # Grand Duchy of Luxemburg claims Deutsch-Wallonien
 	name = walloniaissue.3.a
 	hidden_effect = {
 	741 = { add_claim_by = LUX }
-	country_event = walloniaissue.4 # Bundesrat decides
+	country_event = { id = walloniaissue.4 days = 3 } # Bundesrat decides
 	}
 	custom_effect_tooltip = walloniaissue.3.ta
 	}
@@ -99,7 +105,7 @@ country_event = { # German is now mandatory second language
 	hidden_effect = {
 	modify_country_flag = {
 	flag = GER_741_integration
-	value = 2
+	value = 1
 	}
 	}
 	}
@@ -213,12 +219,6 @@ country_event = { # random industrial investments during integration of German W
 	instant_build = yes
 	}
 	}
-	hidden_effect = {
-	modify_country_flag = {
-	flag = GER_741_integration
-	value = 1
-	}
-	}
 	}
 }
 
@@ -231,7 +231,7 @@ country_event = { # fires when GER has almost fully integrated 741
 	tag = GER
 	has_country_flag = {
 	flag = GER_741_integration
-	value = 13 # arbitrary
+	value = 6
 	}
 	}
 
@@ -289,5 +289,42 @@ country_event = { # sad Adalbert loses the core
 	name = walloniaissue.16.a
 	add_political_power = -100
 	add_stability = -0.1
+	}
+}
+
+country_event = { # flavor for peaceful return of 741
+	id = walloniaissue.17
+	title = walloniaissue.17.t
+	desc = walloniaissue.17.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.17.a
+	add_political_power = 200
+	add_stability = 0.1
+	}
+}
+
+
+### Now comes Belgian resistance
+
+country_event = { # Event for autonomous/independent Belgium
+	id = walloniaissue.20
+	title = walloniaissue.20.t
+	desc = walloniaissue.20.d
+
+	is_triggered_only = yes
+
+	option = { # rev up the protestors
+	name = walloniaissue.20.a
+	hidden_effect = { set_country_flag = wallonia_issue_started_BEL }
+	}
+
+	option = { # concede the territory
+	name = walloniaissue.20.b
+	add_political_power = -200
+	add_stability = -0.2
+	add_war_support = -0.2
 	}
 }

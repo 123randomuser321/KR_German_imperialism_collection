@@ -17,7 +17,7 @@ walloniaissue.1.tb:0 "If you play your cards right, you will gain a core."
 
 ### territory slips through Adalbert's hands
 walloniaissue.2.t:0 "Message from [GER.Capital.GetName]"
-walloniaissue.2.d:0 "The German government has just told us, that [GER.GetNameDef] does not intend to return the Walloon industrial area."
+walloniaissue.2.d:0 "The German government has just told us, that [GER.GetNameDef] does not intend to return the occupied Walloon territories."
 walloniaissue.2.a:0 "We didn't need this to happen..."
 
 ### Charlotte claims German Wallonia
@@ -89,5 +89,17 @@ walloniaissue.15.a:0 "Groß Luxemburg it is!"
 
 ### BEL loses core on 741
 walloniaissue.16.t:0 "German Wallonia gone"
-walloniaissue.16.d:0 "While technically not under our control for a long time, over the past months all signs of Walloon separatism in German-administered Wallonia have vanished.\nSad as it may be, it is lost."
+walloniaissue.16.d:0 "While technically not under our control for a long time, over the past months all signs of separatism in German-administered Wallonia have vanished.\nSad as it may be, it is lost."
 walloniaissue.16.a:0 "A sadness overcomes me..."
+
+### BEL regains 741 peacefully
+walloniaissue.17.t:0 "Occupied territories returned!"
+walloniaissue.17.d:0 "The German government has notified us about their intent to return the occupied Walloon territories!\n\nUnexpected as it may be, the German garrisons are packing their bags and [BEL.GetAdjective] police and garrisons are already moving in to replace them."
+walloniaissue.17.a:0 "A welcome surprise!"
+
+
+### Belgian resistance stuff
+walloniaissue.20.t:0 "The Germans won't give it back!"
+walloniaissue.20.d:0 "Although some had expected this to eventually happen, it still shocked us.\n\nThe German government does not intend to return the Walloon territories.\n\nBut what can we do about this?"
+walloniaissue.20.a:0 "They won't get away with this. They will have to fight!"
+walloniaissue.20.b:0 "We cannot risk our nationhood for a territory lost over twenty years ago."
