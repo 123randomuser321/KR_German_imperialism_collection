@@ -181,7 +181,7 @@ GER_german_wallonia = {
 	hidden_effect = {
 	modify_country_flag = {
 	flag = GER_741_integration
-	value = 4
+	value = 1
 	}
 	}
 	country_event = walloniaissue.7
@@ -210,7 +210,7 @@ GER_german_wallonia = {
 	hidden_effect = {
 	modify_country_flag = {
 	flag = GER_741_integration
-	value = 5
+	value = 1
 	}
 	}
 	country_event = walloniaissue.9 # increased Germanisation
