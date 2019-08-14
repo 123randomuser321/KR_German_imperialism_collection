@@ -12,6 +12,7 @@ GER_german_wallonia = {
 	has_global_flag = wallonia_issue_started
 	# Why still a global flag? So Albert-in-exile can protest
 	owns_state = 741 # don't forget to add a sanity-decision incase the core exists but the state isn't owned
+	NOT = { has_country_flag = BEL_killed_741 } # sanity-check for disruption
 	owns_state = 8
 	}
 }

@@ -299,5 +299,72 @@ GER_german_wallonia = {
 ### decisions for BEL
 ### mostly used to disrupt German efforts
 ### Can however culminate in a plebiscite and German withdrawal
+### you can also permanently brick German attempts at integration
 
-BEL_german_wallonia = {}
+BEL_german_wallonia = {
+	
+	BEL_condemn_741 = {
+	complete_effect = { country_event = walloniaissue.21 }
+	}
+
+	BEL_gather_support = {
+
+	complete_effect = {
+	country_event = walloniaissue.23 # flavor, intro
+	}
+
+	days_remove = 56
+
+	modifier = { political_power_gain = -0.1 }
+
+	remove_effect = {
+	country_event = walloniaissue.24
+	hidden_effect = { set_country_flag = BEL_support_gathered }
+	}
+	}
+
+
+	BEL_infiltrate_741 = {
+
+	visible = { has_country_flag = BEL_support_gathered }
+
+	cost = 50
+
+	complete_effect = {
+	country_event = walloniaissue.25
+	}
+
+	days_remove = 112
+
+	modifier = { political_power_gain = -0.15 }
+
+	remove_effect = {
+	country_event = walloniaissue.26
+	GER = { country_event = walloniaissue.27 } # notify Germany via Secret Services
+	set_country_flag = BEL_741_infiltrated
+	}
+	}
+
+
+	BEL_rev_up_resistance_741 = {
+
+	visible = { has_country_flag = BEL_741_infiltrated }
+
+	cost = 150
+
+	complete_effect = {
+	country_event = walloniaissue.29
+	}
+
+	days_remove = 224
+
+	modifier = { political_power_gain = -0.2 }
+
+	remove_effect = {
+	country_event = walloniaissue.31
+	GER = { set_country_flag = BEL_resist_741 }
+	}
+	}
+
+	### add Belgian propaganda, protests; referendum via mission for GER
+}

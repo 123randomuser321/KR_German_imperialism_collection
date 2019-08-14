@@ -309,7 +309,7 @@ country_event = { # flavor for peaceful return of 741
 
 ### Now comes Belgian resistance
 
-country_event = { # Event for autonomous/independent Belgium
+country_event = { # Event for autonomous/independent Belgium, from .1.b
 	id = walloniaissue.20
 	title = walloniaissue.20.t
 	desc = walloniaissue.20.d
