@@ -183,6 +183,7 @@ GER_german_wallonia = {
 	flag = GER_741_integration
 	value = 1
 	}
+	set_country_flag = public_schools_741_german
 	}
 	country_event = walloniaissue.7
 	}
@@ -293,24 +294,68 @@ GER_german_wallonia = {
 	political_power_gain = -0.1
 	}
 	}
+
+
+	GER_741_clock_ticking = { # mission to kill integration
+
+	#visible = { has_country_flag = BEL_741_bomb_planted } # set by walloniaissue.32
+
+	available = {
+	OR = {
+	has_subject = BEL
+	has_country_flag = public_schools_741_german
+	}
+	}
+
+	fire_only_once = yes
+
+	activation = { has_country_flag = BEL_741_bomb_planted }
+
+	is_good = no
+
+	days_mission_timeout = 80 # wildcard
+
+	complete_effect = {
+	country_event = walloniaissue.34 # flavor, reward
+	}
+
+	timeout_effect = {
+	country_event = walloniaissue.35 # referendum, might still fail, though
+	}
+	}
+
+
+	GER_COINTELPRO_741 = {
+
+	visible = { has_country_flag = GER_741_bustin }
+
+	cost = 10
+
+	days_remove = 21
+
+	days_re_enable = 14
+
+	remove_effect = {
+	country_event = walloniaissue.41 # busted
+	}
+	}
 }
 
 
 ### decisions for BEL
-### mostly used to disrupt German efforts
+### mostly used to annoy German efforts
 ### Can however culminate in a plebiscite and German withdrawal
-### you can also permanently brick German attempts at integration
 
 BEL_german_wallonia = {
 	
 	BEL_condemn_741 = {
-	complete_effect = { country_event = walloniaissue.21 }
+	complete_effect = { GER = { country_event = walloniaissue.21 } }
 	}
 
 	BEL_gather_support = {
 
 	complete_effect = {
-	country_event = walloniaissue.23 # flavor, intro
+	country_event = walloniaissue.22 # flavor, intro
 	}
 
 	days_remove = 56
@@ -318,7 +363,7 @@ BEL_german_wallonia = {
 	modifier = { political_power_gain = -0.1 }
 
 	remove_effect = {
-	country_event = walloniaissue.24
+	country_event = walloniaissue.23
 	hidden_effect = { set_country_flag = BEL_support_gathered }
 	}
 	}
@@ -331,7 +376,7 @@ BEL_german_wallonia = {
 	cost = 50
 
 	complete_effect = {
-	country_event = walloniaissue.25
+	country_event = walloniaissue.24
 	}
 
 	days_remove = 112
@@ -339,9 +384,9 @@ BEL_german_wallonia = {
 	modifier = { political_power_gain = -0.15 }
 
 	remove_effect = {
-	country_event = walloniaissue.26
-	GER = { country_event = walloniaissue.27 } # notify Germany via Secret Services
-	set_country_flag = BEL_741_infiltrated
+	country_event = walloniaissue.25
+	GER = { country_event = walloniaissue.26 } # notify Germany via Secret Services
+	hidden_effect = { set_country_flag = BEL_741_infiltrated }
 	}
 	}
 
@@ -353,7 +398,7 @@ BEL_german_wallonia = {
 	cost = 150
 
 	complete_effect = {
-	country_event = walloniaissue.29
+	country_event = walloniaissue.27
 	}
 
 	days_remove = 224
@@ -361,10 +406,32 @@ BEL_german_wallonia = {
 	modifier = { political_power_gain = -0.2 }
 
 	remove_effect = {
-	country_event = walloniaissue.31
-	GER = { set_country_flag = BEL_resist_741 }
+	country_event = walloniaissue.29
 	}
 	}
 
-	### add Belgian propaganda, protests; referendum via mission for GER
+
+	BEL_spread_741_propaganda = {
+
+	visible = { has_country_flag = BEL_741_infiltrated }
+
+	cost = 50
+
+	complete_effect = {
+	country_event = walloniaissue.30
+	}
+	}
+
+
+	BEL_initiate_referendum = {
+
+	visible = { has_country_flag = BEL_741_protests_spreading }
+
+	cost = 100
+
+	complete_effect = {
+	country_event = walloniaissue.32
+	hidden_effect = { GER = { country_event = walloniaissue.33 } } # launches the timer
+	}
+	}
 }
