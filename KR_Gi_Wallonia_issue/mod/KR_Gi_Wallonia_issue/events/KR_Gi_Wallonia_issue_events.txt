@@ -328,3 +328,268 @@ country_event = { # Event for autonomous/independent Belgium, from .1.b
 	add_war_support = -0.2
 	}
 }
+
+country_event = { # Germany recieves condemnation
+	id = walloniaissue.21
+	title = walloniaissue.21.t
+	desc = walloniaissue.21.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.21.a
+	add_political_power = -100
+	}
+}
+
+country_event = { # BEL gathers internal support
+	id = walloniaissue.22
+	title = walloniaissue.22.t
+	desc = walloniaissue.22.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.22.a
+	}
+}
+
+country_event = { # BEL gathered internal support
+	id = walloniaissue.23
+	title = walloniaissue.23.t
+	desc = walloniaissue.23.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.23.a
+	add_political_power = 50
+	add_stability = 0.01
+	}
+}
+
+country_event = { # BEL starts infiltration of the territory
+	id = walloniaissue.24
+	title = walloniaissue.24.t
+	desc = walloniaissue.24.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.24.a
+	}
+}
+
+country_event = { # BEL sleeper cells done
+	id = walloniaissue.25
+	title = walloniaissue.25.t
+	desc = walloniaissue.25.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.25.a
+	}
+}
+
+country_event = { # GER picks up a trail
+	id = walloniaissue.26
+	title = walloniaissue.26.t
+	desc = walloniaissue.26.d
+	#picture = Abteilung_Abwehr
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.26.a
+	add_political_power = -10
+	}
+}
+
+country_event = { # BEL organizes resistance
+	id = walloniaissue.27
+	title = walloniaissue.27.t
+	desc = walloniaissue.27.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.27.a
+	hidden_effect = {
+	GER = {
+	country_event = {
+	id = walloniaissue.28
+	days = 28
+	}
+	}
+	}
+	}
+}
+
+country_event = { # GER gets mad and decides to mess with BEL
+	id = walloniaissue.28
+	title = walloniaissue.28.t
+	desc = walloniaissue.28.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.28.a
+	hidden_effect = { set_country_flag = GER_741_bustin }
+	}
+}
+
+country_event = { # BEL resistance organized and ready
+	id = walloniaissue.29
+	title = walloniaissue.29.t
+	desc = walloniaissue.29.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.29.a
+	add_political_power = 50
+	}
+}
+
+country_event = { # BEL spreads propaganda, leaflets, etc
+	id = walloniaissue.30
+	title = walloniaissue.30.t
+	desc = walloniaissue.30.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.30.a
+	add_stability = 0.01
+	}
+}
+
+country_event = { # protests spreading in GER
+	id = walloniaissue.31
+	title = walloniaissue.31.t
+	desc = walloniaissue.31.d
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = GER
+	BEL = { has_country_flag = BEL_741_infiltrated }
+	owns_state = 8
+	owns_state = 741
+	}
+
+	mean_time_to_happen = {
+	days = 50 # this wildcard more or less decides if GER fails
+	}
+
+	option = {
+	name = walloniaissue.31.a
+	add_political_power = -50
+	hidden_effect = { BEL = { set_country_flag = BEL_741_protests_spreading } }
+	custom_effect_tooltip = walloniaissue.31.ta # red text
+	}
+}
+
+country_event = { # BEL triggers plebiscite
+	id = walloniaissue.32
+	title = walloniaissue.32.t
+	desc = walloniaissue.32.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.32.a
+	add_political_power = 50
+	add_stability = 0.02
+	}
+}
+
+country_event = { # BEL triggers plebiscite, big oof (GER edition)
+	id = walloniaissue.33
+	title = walloniaissue.33.t
+	desc = walloniaissue.33.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.33.a
+	add_political_power = -100
+	hidden_effect = { set_country_flag = BEL_741_bomb_planted }
+	}
+}
+
+country_event = { # Plebiscite averted
+	id = walloniaissue.34
+	title = walloniaissue.34.t
+	desc = walloniaissue.34.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.34.a
+	add_stability = 0.05
+	add_political_power = 200
+	}
+}
+
+country_event = { # The referendum on the status of 741
+	id = walloniaissue.35
+	title = walloniaissue.35.t
+	desc = walloniaissue.35.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.35.a
+	# do random_list here
+	}
+}
+
+country_event = { # plebiscite averted, BEL sad
+	id = walloniaissue.36
+	title = walloniaissue.36.t
+	desc = walloniaissue.36.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.36.a
+	}
+}
+
+country_event = { # 
+	id = walloniaissue.37
+	title = walloniaissue.37.t
+	desc = walloniaissue.37.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.37.a
+	}
+}
+
+country_event = { # 
+	id = walloniaissue.38
+	title = walloniaissue.38.t
+	desc = walloniaissue.38.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.38.a
+	}
+}
+
+country_event = { # 
+	id = walloniaissue.39
+	title = walloniaissue.39.t
+	desc = walloniaissue.39.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.39.a
+	}
+}
