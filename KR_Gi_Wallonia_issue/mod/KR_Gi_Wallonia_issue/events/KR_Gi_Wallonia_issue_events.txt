@@ -533,7 +533,7 @@ country_event = { # Plebiscite averted
 	}
 }
 
-country_event = { # The referendum on the status of 741
+country_event = { # plebiscite averted, BEL sad
 	id = walloniaissue.35
 	title = walloniaissue.35.t
 	desc = walloniaissue.35.d
@@ -542,11 +542,10 @@ country_event = { # The referendum on the status of 741
 
 	option = {
 	name = walloniaissue.35.a
-	# do random_list here
 	}
 }
 
-country_event = { # plebiscite averted, BEL sad
+country_event = { # The referendum on the status of 741
 	id = walloniaissue.36
 	title = walloniaissue.36.t
 	desc = walloniaissue.36.d
@@ -555,10 +554,11 @@ country_event = { # plebiscite averted, BEL sad
 
 	option = {
 	name = walloniaissue.36.a
+	# random_list
 	}
 }
 
-country_event = { # 
+country_event = { # BEL wins ref
 	id = walloniaissue.37
 	title = walloniaissue.37.t
 	desc = walloniaissue.37.d
@@ -570,7 +570,7 @@ country_event = { #
 	}
 }
 
-country_event = { # 
+country_event = { # BEL reacts to win
 	id = walloniaissue.38
 	title = walloniaissue.38.t
 	desc = walloniaissue.38.d
@@ -582,7 +582,7 @@ country_event = { #
 	}
 }
 
-country_event = { # 
+country_event = { # GER wins ref
 	id = walloniaissue.39
 	title = walloniaissue.39.t
 	desc = walloniaissue.39.d
@@ -591,5 +591,41 @@ country_event = { #
 
 	option = {
 	name = walloniaissue.39.a
+	}
+}
+
+country_event = { # BEL reacts to loss
+	id = walloniaissue.40
+	title = walloniaissue.40.t
+	desc = walloniaissue.40.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.40.a
+	}
+}
+
+country_event = { # Abteilung Abwehr arrests Belgian organizers
+	id = walloniaissue.41
+	title = walloniaissue.41.t
+	desc = walloniaissue.41.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.41.a
+	}
+}
+
+country_event = { # BEL gets mad at losing spies
+	id = walloniaissue.42
+	title = walloniaissue.42.t
+	desc = walloniaissue.42.d
+
+	is_triggered_only = yes
+
+	option = {
+	name = walloniaissue.42.a
 	}
 }
