@@ -320,12 +320,12 @@ GER_german_wallonia = {
 	}
 
 	timeout_effect = {
-	country_event = walloniaissue.35 # referendum, might still fail, though
+	country_event = walloniaissue.36 # referendum, might still fail, though
 	}
 	}
 
 
-	GER_COINTELPRO_741 = {
+	GER_COINTELPRO_741 = { # BEL has smol pp
 
 	visible = { has_country_flag = GER_741_bustin }
 
